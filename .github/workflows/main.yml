@@ -3,6 +3,9 @@ name: main
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: "0 0 * * *"
+
 jobs:
   Test:
     runs-on: ubuntu-latest
@@ -20,6 +23,6 @@ jobs:
               echo $i > ./begin
               git add ./README.md
               git add ./begin
-              git commit  -m "+1s"
+              git commit  -m "悲"
               git pull --rebase
               git push
