@@ -3,8 +3,8 @@ name: main
 on:
   workflow_dispatch:
 
-  schedule:
-    - cron: "0 0 * * *"
+--  schedule:
+--    - cron: "0 0 * * *"
 
 jobs:
   Test:
